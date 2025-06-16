@@ -135,6 +135,7 @@ body{
 
 
 .footer{
+    justify-self:end;
     margin: 0;
     height: 10%;
 }
