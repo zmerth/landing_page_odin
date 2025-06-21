@@ -13,15 +13,16 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 1% 9% 1% 8%;
-    /*height: 10%;*/
-    height: 10vh;
+    height: 10%;
+    /*height: 10vh;*/
     background-color: #1f2937;
+    margin: 0px;
 
 }
 
 .content{
-    /*height: 80%;*/
-    height: 80vh;
+    /*height: 80vh;*/
+    height: 80%;
 }
 .right-aligned{
     justify-content: space-between;
@@ -31,30 +32,36 @@ body{
     margin: 8px;
 }
 .sec1{
-    max-height: 30%;
+    /*max-height: 24vh;*/
+    height: 30%;
+    max-height: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     background-color: #1f2937;
     justify-content: center;
     padding: 2% 0% 2% 8%;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .sec1a, .sec1b{
     height: 80%;
-    width: 50%;
+    /*height: 19.2vh;*/
+    max-width: 50%;
+    min-width:min-content;
 }
 
-.sec1b{
-    flex-wrap: wrap;
-}
-.sec1b img{
-    height: 100%;
-    max-width: 100%;
+
+.sec1b>img{
+    max-height: 100%;
+    max-width: 50%;
     /*margin-left: 20%;
     margin-right: 20%;*/
 }
 
 .sec2{
+    /*height: 28vh;*/
     height: 35%;
     display: flex;
     flex-direction: column;
@@ -68,14 +75,18 @@ body{
 }
 .mentors{
     display: flex;
-    max-height: 90%;
+    flex-direction: row;
+    height: 90%;
+    max-height: 100%;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .ment{
     text-align: center;
     max-height: 20%;
     max-width: 20%;
+    min-width:min-content;
 }
 
 .ment img{
@@ -86,6 +97,7 @@ body{
 .sec3{
     display: flex;
     flex-direction: column;
+    /*height: 28vh;*/
     height: 16%;
     font-size: 28px;
     font-weight: light;
@@ -108,6 +120,7 @@ body{
 .sec4{
 
     margin-top: 0;
+    /*height: 11.2vh;*/
     height: 14%;
 }
 
@@ -138,8 +151,8 @@ body{
 
 .footer{
     justify-self:flex-end;
-    /*height: 10%;*/
-    height: 10vh;
+    /*height: 10vh;*/
+    height: 10%;
 }
 
 /*Cosmetic*/
@@ -158,6 +171,7 @@ ul{
 
 }
 #herotxt{
+    /*font-size: 5vh;*/
     font-size: 48px;
     font-weight: 900;
     color: #f9faf8;
@@ -189,9 +203,41 @@ ul{
     background-color: #3882f6;
     padding: 2px;
     height: fit-content;
-    width: 120px;
+    /*width: 120px;*/
     border-style: none;
-    font-size: 24px;
+    /*font-size: 24px;*/
+    font-size: 3vh;
     color:#f9faf8;
     border-radius: 12px;
 }
+
+
+/*CHANGES TO FIX THE CROSS-PLATFORM ALIGNMENT ISSUE*/
+
+/*body{
+    margin: 0;
+    height: 1912px;
+    width: 100vw;
+}
+.content{
+    height: 1529.6px;
+    flex-wrap: wrap;
+}
+
+.sec1{
+    height:28%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.sec1a, .sec1b{
+    max-height: 80%;
+}
+
+.sec1b img{
+    max-height: 100%;
+}
+
+.sec2{
+
+}*/
